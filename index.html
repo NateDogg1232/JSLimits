@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        var i;
+        function initI()
+        {
+            i = 0;
+        }
+        function checkI()
+        {
+            return i < 20;
+        }
+        function incrementI()
+        {
+            i++;
+        }
+        
+        for (initI(); checkI(); incrementI())
+        {
+            document.getElementById("out").innerHTML += i + "<br>";
+        }
+    </script>
+</body>
+</html>
